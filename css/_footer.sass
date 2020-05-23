@@ -1,0 +1,36 @@
+footer .redes-sociales
+    display: flex
+    align-content: center
+    justify-content: center
+    padding: 20px
+    flex-wrap: wrap
+    a i
+        font-size: 20px
+        line-height: 60px
+
+.redes-sociales__enlace
+    display: block
+    width: 60px
+    height: 60px
+    background: #000
+    color: #fff
+    margin: 20px
+    text-align: center
+    border-radius: 100px
+    transition: .3s ease all
+
+.redes-sociales__enlace.twitter
+    background: #1da1f2
+.redes-sociales__enlace.facebook
+    background: #3b5998
+.redes-sociales__enlace.instagram
+    background: #c13584
+
+.redes-sociales__contenedor-icono:hover a
+    animation: icono .5s ease
+
+@keyframes icono
+    from
+        transform: rotate3d(0, 0, 0, 0)
+    to 
+        transform: rotate3d(0, 1, 0, 360deg)

@@ -1,0 +1,38 @@
+.overlay
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: rgba(0, 0, 0, .9)
+    width: 100%
+    height: 100vh
+    display: none
+    justify-content: center
+    align-items: center
+    flex-direction: column
+.overlay.activo
+    display: flex
+    
+.overlay__img-grande
+        max-width: 750px
+.overlay__descripcion
+    display: block
+    background: #fff
+    padding: 20px
+    text-align: center
+    margin-top: 5px
+    border-radius: 10px
+    max-width: 50%
+.overlay__contenedor-img
+    position: relative
+.overlay #btn-cerrar-popup
+    background: none
+    font-size: 20px
+    color: #fff
+    border: none
+    cursor: pointer
+    position: absolute
+    right: -20px
+    top: 0px
+ 

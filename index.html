@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    
+    <div class="contenedor">
+
+        <header class="header">
+            <div class="header__logo">
+                <img src="img/perfil.jpeg" alt="" class="header__foto-perfil">
+                <div class="header__contenedor-descripcion">
+                    <h1 class="header__nombre">Ramón Urchipia</h1>
+                    <p class="header__descripcion">Fotógrafo</p>
+                </div>
+            </div>
+            <form action="" class="header__formulario">
+                <input type="text" class="header__barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+
+            <div class="header__categorias" id="categorias">
+                <a href="#" class="header__enlace activo">Todas</a>
+                <a href="#" class="header__enlace">Lugares</a>
+                <a href="#" class="header__enlace">Paisajes</a>
+                <a href="#" class="header__enlace">Book</a>
+                <a href="#" class="header__enlace">Animales</a>
+                <a href="#" class="header__enlace">Espectaculos</a>
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item" 
+            data-categoria="lugares" 
+            data-etiquetas="lugar campo ruina"
+            data-descripcion="Esta es la descripcion de la imagen.">
+
+                <div class="item__contenido">
+                    <img src="img/lugares1.jpg" alt="" class="item__imagen">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="animales" 
+            data-etiquetas="animal pinguino"
+            data-descripcion="Esta es la descripcion de la imagen.">
+
+                <div class="item__contenido">
+                    <img src="img/animales1.jpg" alt="" class="item__imagen">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="book" 
+            data-etiquetas="chica modelo book"
+            data-descripcion="Esta es la descripcion de la imagen.">
+
+                <div class="item__contenido">
+                    <img src="img/modelo1.jpg" alt="" class="item__imagen">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="paisajes" 
+            data-etiquetas="paisaje campo arbol"
+            data-descripcion="Esta es la descripcion de la imagen.">
+
+                <div class="item__contenido">
+                    <img src="img/paisaje2.jpg" alt="" class="item__imagen">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="animales" 
+            data-etiquetas="animal caballo campo"
+            data-descripcion="Esta es la descripcion de la imagen.">
+
+                <div class="item__contenido">
+                    <img src="img/animales5.jpg" alt="" class="item__imagen">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="espectaculos" 
+            data-etiquetas="espectaculo show musica rock"
+            data-descripcion="Esta es la descripcion de la imagen.">
+
+                <div class="item__contenido">
+                    <img src="img/espectaculos2.jpg" alt="" class="item__imagen">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="paisajes" 
+            data-etiquetas="paisaje ciudad"
+            data-descripcion="Esta es la descripcion de la imagen.">
+
+                <div class="item__contenido">
+                    <img src="img/paisaje1.jpg" alt="" class="item__imagen">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="book" 
+            data-etiquetas="chica modelo book"
+            data-descripcion="Esta es la descripcion de la imagen.">
+
+                <div class="item-contenido">
+                    <img src="img/modelo6.jpg" alt="" class="item__imagen">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="lugares" 
+            data-etiquetas="lugares campo silos"
+            data-descripcion="Esta es la descripcion de la imagen.">
+
+                <div class="item__contenido">
+                    <img src="img/lugares4.jpg" alt="" class="item__imagen">
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="overlay" id="overlay">
+            <div class="overlay__contenedor-img">
+                <button class="overlay__btn-cerrar-popup" id="btn-cerrar-popup"><i class="overlay__icono fas fa-times"></i></button>
+                <img src="" alt="" class="overlay__img-grande">
+            </div>
+            <p class="overlay__descripcion"></p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+
+                <div class="redes-sociales__contenedor-icono">
+                    <a href="https://www.facebook.com/ramon.urchipia/" target="_blank" class="redes-sociales__enlace facebook"><i class="redes-sociales__icono fab fa-facebook-f"></i></a>
+                </div>
+
+                <div class="redes-sociales__contenedor-icono">
+                    <a href="https://www.instagram.com/ramonurchipia/" target="_blank" class="redes-sociales__enlace instagram"><i class="redes-sociales__icono fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+    </div>
+
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

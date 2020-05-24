@@ -10,7 +10,7 @@ body {
 }
 body .contenedor {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1400px;
   margin: auto;
 }
 body .contenedor a {
@@ -99,6 +99,7 @@ header .header__logo {
   padding: 0;
   margin: 10px;
   width: calc(33.33333% - 20px);
+  overflow: hidden;
 }
 .grid .item .item__contenido {
   position: relative;
@@ -107,6 +108,10 @@ header .header__logo {
   width: 100%;
   cursor: pointer;
   vertical-align: top;
+  transition: all 0.2s ease;
+}
+.grid .item .item__imagen:hover {
+  transform: scale(1.2);
 }
 
 .overlay {
@@ -129,7 +134,7 @@ header .header__logo {
 }
 
 .overlay__img-grande {
-  max-width: 750px;
+  max-width: 845px;
 }
 
 .overlay__descripcion {

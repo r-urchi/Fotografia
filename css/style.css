@@ -295,6 +295,24 @@ footer .redes-sociales a i {
     font-size: 14px;
     font-weight: 300;
   }
+
+  .overlay #btn-cerrar-popup {
+    display: none;
+  }
+
+  .overlay__redes-enlace {
+    width: 45px;
+    height: 45px;
+  }
+
+  .overlay__redes a i {
+    font-size: 20px;
+    line-height: 45px;
+  }
+
+  .overlay__img-grande {
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

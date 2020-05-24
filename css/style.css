@@ -74,14 +74,17 @@ header .header__logo {
 
 .header__enlace {
   color: #575757;
-  margin: 10px 20px;
+  margin: 10px;
   font-size: 18px;
   font-weight: 700;
+  padding: 10px;
 }
 
 .header__enlace.activo {
-  color: #3b3a3a;
-  text-decoration: underline;
+  color: #fff;
+  background: #3d3d3d;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .header__switch {
@@ -357,12 +360,12 @@ footer .redes-sociales a i {
 
   .header__enlace {
     color: #9b9b9b;
-    margin: 10px 5px;
-    font-size: 14px;
+    margin: 10px 0px;
+    font-size: 16px;
     font-weight: 300;
   }
 
-  .overlay #btn-cerrar-popup {
+  .overlay__btn-cerrar-popup {
     display: none;
   }
 
@@ -378,6 +381,18 @@ footer .redes-sociales a i {
 
   .overlay__img-grande {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .overlay__redes-enlace {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+  }
+
+  .overlay__redes a i {
+    font-size: 15px;
+    line-height: 35px;
   }
 }
 

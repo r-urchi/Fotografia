@@ -5,15 +5,14 @@
 
   .header__barra-busqueda 
     width: 100%
-  
 
   .header__enlace 
     color: #9b9b9b
-    margin: 10px 5px
-    font-size: 14px
+    margin: 10px 0px
+    font-size: 16px
     font-weight: 300
 
-  .overlay #btn-cerrar-popup
+  .overlay__btn-cerrar-popup
     display: none
 
   .overlay__redes-enlace
@@ -27,4 +26,15 @@
 
   .overlay__img-grande
       max-width: 100%
-  
+
+
+@media screen and (max-width: 450px) 
+  .overlay__redes-enlace
+    width: 35px
+    height: 35px
+    margin: 5px
+
+  .overlay__redes
+    a i
+        font-size: 15px
+        line-height: 35px

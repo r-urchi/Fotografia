@@ -5,8 +5,9 @@
 }
 
 body {
-  background: #2e2e2e;
+  background: #fff;
   font-family: "Josefin Sans", sans-serif;
+  transition: 0.3s ease all;
 }
 body .contenedor {
   width: 90%;
@@ -38,12 +39,12 @@ header .header__logo {
 }
 
 .header__descripcion {
-  color: #9b9b9b;
+  color: #3d3d3d;
   margin-top: 5px;
 }
 
 .header__nombre {
-  color: #fff;
+  color: #3d3d3d;
 }
 
 .header__formulario {
@@ -60,7 +61,7 @@ header .header__logo {
   background: #fff;
   padding: 0 20px;
   border-radius: 100px;
-  border: none;
+  border: 1px solid #727272;
   text-align: center;
   font-size: 16px;
 }
@@ -72,13 +73,73 @@ header .header__logo {
 }
 
 .header__enlace {
-  color: #9b9b9b;
+  color: #575757;
   margin: 10px 20px;
   font-size: 18px;
   font-weight: 700;
 }
 
 .header__enlace.activo {
+  color: #3b3a3a;
+  text-decoration: underline;
+}
+
+.header__switch {
+  background: #343D5B;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: flex-start;
+  outline: none;
+  margin-left: 50px;
+}
+
+.header__switch::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #F1F1F1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header__switch.activo {
+  background: orange;
+  color: black;
+}
+
+.header__switch.activo::after {
+  right: 0;
+  left: unset;
+}
+
+.header__switch span {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+body.dark {
+  background: #000;
+}
+
+.header__descripcion.dark,
+.header__nombre.dark {
   color: #fff;
 }
 

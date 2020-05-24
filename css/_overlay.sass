@@ -36,3 +36,70 @@
     right: -20px
     top: 0px
  
+// --------------------------------------
+    
+.overlay-info
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: rgba(0, 0, 0, .9)
+    width: 100%
+    height: 100vh
+    display: none
+    justify-content: center
+    align-items: center
+    flex-direction: column
+.overlay-info.activo
+    display: flex
+    
+.overlay__titulo-bio
+    margin: 15px 0
+    
+.overlay__bio
+    display: block
+    background: #fff
+    padding: 20px
+    text-align: center
+    margin-top: 5px
+    border-radius: 10px
+    max-width: 50%
+.overlay__contenedor-info
+    position: relative
+.overlay__btn-cerrar-popup 
+    background: none
+    font-size: 20px
+    color: #fff
+    border: none
+    cursor: pointer
+    position: absolute
+    right: -360px
+    top: 5px
+
+// ---------------------------------
+
+.overlay__redes
+    display: flex
+    align-content: center
+    justify-content: center
+    padding: 10px
+    flex-wrap: wrap
+    a i
+        font-size: 20px
+        line-height: 60px
+
+.overlay__redes-enlace
+    display: block
+    width: 60px
+    height: 60px
+    background: #000
+    color: #fff
+    margin: 15px 20px 0 20px
+    text-align: center
+    border-radius: 100px
+
+.overlay__redes-enlace.facebook
+    background: #3b5998
+.overlay__redes-enlace.instagram
+    background: #c13584

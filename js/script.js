@@ -50,6 +50,22 @@ window.addEventListener('load', () => {
         });
     });
 
+    // abrir info
+
+    const fotoInfo = document.getElementById('header__foto-perfil');
+    const overlayInfo = document.getElementById('overlay-info');
+
+    fotoInfo.addEventListener('click', () =>{
+        overlayInfo.classList.add('activo');
+        
+    })
+
+    //boton cerrar info
+
+    document.querySelector('#btn-cerrar-info').addEventListener('click', () => {
+        overlayInfo.classList.remove('activo');
+    })
+
     // boton cerrar 
 
     document.querySelector('#btn-cerrar-popup').addEventListener('click', () => {
@@ -57,6 +73,13 @@ window.addEventListener('load', () => {
     });
 
     // cerrar con el overlay 
+
+    overlayInfo.addEventListener('click', (e) => {
+
+        if(e.target.id === 'overlay-info'){
+            overlayInfo.classList.remove('activo');
+        };
+    });
 
     overlay.addEventListener('click', (e) => {
         

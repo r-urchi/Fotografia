@@ -42,11 +42,11 @@ window.addEventListener('load', () => {
         
         elemento.addEventListener('click', () => {
             const ruta = elemento.getAttribute('src');
-            const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
+            // const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
 
             overlay.classList.add('activo');
             document.querySelector('#overlay img').src = ruta;
-            document.querySelector('#overlay .overlay__descripcion').innerHTML = descripcion;
+            // document.querySelector('#overlay .overlay__descripcion').innerHTML = descripcion;
         });
     });
 

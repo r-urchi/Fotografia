@@ -37,6 +37,10 @@ header .header__logo {
   margin-right: 20px;
   cursor: pointer;
 }
+.header__foto-perfil:hover {
+  opacity: 0.7;
+  transition: 0.2s ease all;
+}
 
 .header__descripcion {
   color: #3d3d3d;
@@ -60,11 +64,23 @@ header .header__logo {
   line-height: 40px;
   background: #fff;
   padding: 0 20px;
-  border-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
   border: 1px solid #727272;
   text-align: center;
   font-size: 16px;
   outline: none;
+}
+
+.header__lupa {
+  height: 40px;
+  border: 1px solid #727272;
+  border-left: none;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  color: #545454;
+  background: #f8f8f8;
+  padding: 0 25px;
 }
 
 .header__categorias {
@@ -301,9 +317,15 @@ body.dark {
 .overlay__redes-enlace.facebook {
   background: #3b5998;
 }
+.overlay__redes-enlace.facebook:hover {
+  background: #2f4677;
+}
 
 .overlay__redes-enlace.instagram {
   background: #c13584;
+}
+.overlay__redes-enlace.instagram:hover {
+  background: #8a275f;
 }
 
 footer .redes-sociales {

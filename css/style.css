@@ -331,6 +331,85 @@ body.dark {
   background: #8a275f;
 }
 
+.contenedor__contacto-titulo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+  margin: 35px 0 25px 0;
+}
+
+.formulario__contenedor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario__grupo.nombre,
+.formulario__grupo.email {
+  display: inline-block;
+}
+
+.formulario__grupo {
+  position: relative;
+  margin: 45px;
+}
+
+.formulario__grupo input,
+.formulario__grupo textarea {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #979797;
+  resize: none;
+}
+
+.formulario__grupo input:focus,
+.formulario__grupo textarea:focus {
+  outline: none;
+  color: #5e5d5d;
+}
+
+.formulario__barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.formulario__grupo input:focus ~ .formulario__barra::before, .formulario__grupo textarea:focus ~ .formulario__barra::before {
+  width: 100%;
+}
+
+.formulario__barra::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, #6A82FB, #FC5C7D);
+  transition: 0.3s ease all;
+  left: 0%;
+}
+
+.formulario__boton {
+  background: #FC5C7D;
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+  background: linear-gradient(to right, #6A82FB, #FC5C7D);
+  display: block;
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
 footer .redes-sociales {
   display: flex;
   align-content: center;

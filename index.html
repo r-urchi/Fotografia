@@ -293,6 +293,32 @@
         </section>
 
         <footer class="contenedor">
+
+            <h3 class="contenedor__contacto-titulo">Contacto</h3>
+
+            <form class="formulario" action="contacto.php" method="POST" data-netlify="true"> 
+
+                <div class="formulario__contenedor">
+        
+                    <div class="formulario__grupo nombre">
+                        <input type="text" name="nombre" id="" placeholder="Nombre" maxlength="30" required><span class="formulario__barra"></span>
+                    </div>    
+                    <div class="formulario__grupo email">
+                        <input type="email" name="email" id="" placeholder="E-mail" required><span class="formulario__barra"></span>
+                    </div>   
+                    <div class="formulario__grupo asunto">
+                        <input type="text" name="asunto" id="" placeholder="Asunto" maxlength="30" required><span class="formulario__barra"></span>
+                    </div>  
+                    <div class="formulario__grupo textarea">  
+                        <textarea name="mensaje" id="" rows="3" placeholder="Escribi tu consulta" maxlength="300" required></textarea><span class="formulario__barra"></span>
+                    </div>
+
+                    <button type="submit" class="formulario__boton">Enviar</button>
+        
+                </div>
+        
+            </form>
+
             <div class="redes-sociales">
 
                 <div class="redes-sociales__contenedor-icono">

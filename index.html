@@ -18,6 +18,11 @@
                 <div class="header__contenedor-descripcion">
                     <h1 class="header__nombre">Ramón Urchipia</h1>
                     <p class="header__descripcion">Fotógrafo</p>
+                    <div class="header__menu">
+                        <a href="#" id="header__info" class="header__enlace">Sobre mí</a>
+                        <a href="#header__contacto" class="header__contacto header__enlace" id="header__form">Contacto</a>
+                    </div>
+
                 </div>
                 <button class="header__switch" id="switch" title="Modo oscuro">
                     <span></span>
@@ -267,7 +272,7 @@
                 <button class="overlay__btn-cerrar-popup" id="btn-cerrar-info"><i class="overlay__icono fas fa-times"></i></button>
             </div>
                 <div class="overlay__bio">
-                    <h3 class="overlay__titulo-bio">Sobre mi:</h3>
+                    <h3 class="overlay__titulo-bio">Sobre mí:</h3>
                     <p class="overlay__parrafo-bio">
                         Soy Argentino, vivo en Capital Federal, y me dedico a la Fotografía Profesional.
                         <br>
@@ -292,7 +297,7 @@
 
         </section>
 
-        <footer class="contenedor">
+        <footer class="contenedor" id="header__contacto">
 
             <h3 class="contenedor__contacto-titulo">Contacto</h3>
 
@@ -300,17 +305,20 @@
 
                 <div class="formulario__contenedor">
         
-                    <div class="formulario__grupo nombre">
-                        <input type="text" name="nombre" id="" placeholder="Nombre" maxlength="30" required><span class="formulario__barra"></span>
-                    </div>    
-                    <div class="formulario__grupo email">
-                        <input type="email" name="email" id="" placeholder="E-mail" required><span class="formulario__barra"></span>
-                    </div>   
+                
+                    <div class="formulario__nombre-mail">
+                        <div class="formulario__grupo nombre">
+                            <input type="text" name="nombre" id="" placeholder="Nombre" maxlength="30" required><span class="formulario__barra"></span>
+                        </div>    
+                        <div class="formulario__grupo email">
+                            <input type="email" name="email" id="" placeholder="E-mail" required><span class="formulario__barra"></span>
+                        </div>  
+                    </div> 
                     <div class="formulario__grupo asunto">
                         <input type="text" name="asunto" id="" placeholder="Asunto" maxlength="30" required><span class="formulario__barra"></span>
                     </div>  
                     <div class="formulario__grupo textarea">  
-                        <textarea name="mensaje" id="" rows="3" placeholder="Escribi tu consulta" maxlength="300" required></textarea><span class="formulario__barra"></span>
+                        <textarea name="mensaje" id="" rows="3" placeholder="Escribí tu consulta" maxlength="300" required></textarea><span class="formulario__barra"></span>
                     </div>
 
                     <button type="submit" class="formulario__boton">Enviar</button>

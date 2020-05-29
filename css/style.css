@@ -18,6 +18,10 @@ body .contenedor a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   padding: 40px;
 }
@@ -27,6 +31,15 @@ header .header__logo {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header__contacto,
+#header__info {
+  color: #575757;
+}
+.header__contacto:hover,
+#header__info:hover {
+  opacity: 0.5;
 }
 
 .header__foto-perfil {
@@ -46,6 +59,7 @@ header .header__logo {
 .header__descripcion {
   color: #3d3d3d;
   margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .header__nombre {
@@ -163,6 +177,10 @@ body.dark {
 
 .header__descripcion.dark,
 .header__nombre.dark {
+  color: #fff;
+}
+
+.contenedor__contacto-titulo.dark {
   color: #fff;
 }
 
@@ -345,27 +363,38 @@ body.dark {
   flex-direction: column;
 }
 
+.formulario__nombre-mail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .formulario__grupo.nombre,
 .formulario__grupo.email {
-  display: inline-block;
+  width: 45%;
 }
 
 .formulario__grupo {
   position: relative;
-  margin: 45px;
+  margin: 35px;
 }
 
 .formulario__grupo input,
 .formulario__grupo textarea {
+  font-family: "Josefin Sans", sans-serif;
   background: none;
   color: #c6c6c6;
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
+  font-size: 16px;
+  padding: 0px 10px 10px 5px;
   display: block;
   width: 100%;
   border: none;
   border-bottom: 1px solid #979797;
   resize: none;
+}
+
+.formulario__grupo textarea {
+  height: 150px;
 }
 
 .formulario__grupo input:focus,
@@ -463,11 +492,17 @@ footer .redes-sociales a i {
     width: 100%;
   }
 
-  .header__enlace {
+  .header__enlace,
+#header__info {
     color: #9b9b9b;
     margin: 10px 0px;
     font-size: 16px;
     font-weight: 300;
+  }
+
+  .header__menu {
+    display: flex;
+    justify-content: center;
   }
 
   .overlay__btn-cerrar-popup {

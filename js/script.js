@@ -54,8 +54,13 @@ window.addEventListener('load', () => {
 
     const fotoInfo = document.getElementById('header__foto-perfil');
     const overlayInfo = document.getElementById('overlay-info');
+    const sobreMi = document.getElementById('header__info');
 
     fotoInfo.addEventListener('click', () =>{
+        overlayInfo.classList.add('activo');
+    })
+
+    sobreMi.addEventListener('click', () =>{
         overlayInfo.classList.add('activo');
         
     })
@@ -100,6 +105,7 @@ btnSwitch.addEventListener("click", () => {
     document.body.classList.toggle("dark");
     document.querySelector('.header__nombre').classList.toggle("dark");
     document.querySelector('.header__descripcion').classList.toggle("dark");
+    document.querySelector('.contenedor__contacto-titulo').classList.toggle("dark");
     btnSwitch.classList.toggle("activo");
 
     // guarda en localstorage ------------------------------------------
@@ -115,6 +121,7 @@ if(localStorage.getItem("dark-mode") === "true"){
     document.body.classList.add("dark");
     document.querySelector('.header__nombre').classList.add("dark");
     document.querySelector('.header__descripcion').classList.add("dark");
+    document.querySelector('.contenedor__contacto-titulo').classList.add("dark");
     
     btnSwitch.classList.add("activo");
     
@@ -122,6 +129,7 @@ if(localStorage.getItem("dark-mode") === "true"){
     document.body.classList.remove("dark");
     document.querySelector('.header__nombre').classList.remove("dark");
     document.querySelector('.header__descripcion').classList.remove("dark");
+    document.querySelector('.contenedor__contacto-titulo').classList.remove("dark");
 
     btnSwitch.classList.remove("activo");
 }

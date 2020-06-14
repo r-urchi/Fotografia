@@ -18,6 +18,12 @@ body .contenedor a {
   text-decoration: none;
 }
 
+button,
+a,
+input {
+  outline: none;
+}
+
 html {
   scroll-behavior: smooth;
 }

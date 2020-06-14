@@ -202,6 +202,7 @@ body.dark {
   margin: 10px;
   width: calc(33.33333% - 20px);
   overflow: hidden;
+  box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.42);
 }
 .grid .item .item__contenido {
   position: relative;
@@ -229,6 +230,7 @@ body.dark {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 99;
 }
 
 .overlay.activo {
@@ -394,7 +396,7 @@ body.dark {
 }
 
 .formulario__grupo textarea {
-  height: 150px;
+  height: 120px;
 }
 
 .formulario__grupo input:focus,
@@ -437,6 +439,10 @@ body.dark {
   font-size: 16px;
   margin: 10px auto;
   cursor: pointer;
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.42);
+}
+.formulario__boton:hover {
+  color: #c0c0c0;
 }
 
 footer .redes-sociales {
@@ -457,6 +463,7 @@ footer .redes-sociales a i {
   height: 60px;
   background: #000;
   color: #fff;
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.42);
   margin: 20px;
   text-align: center;
   border-radius: 100px;
@@ -483,7 +490,7 @@ footer .redes-sociales a i {
     transform: rotate3d(0, 1, 0, 360deg);
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .grid .item {
     width: calc(50% - 20px);
   }
@@ -521,6 +528,11 @@ footer .redes-sociales a i {
 
   .overlay__img-grande {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .grid .item {
+    width: calc(100% - 20px);
   }
 }
 @media screen and (max-width: 450px) {

@@ -9,6 +9,7 @@
   "author": "Ramon Urchipia",
   "license": "ISC",
   "dependencies": {
-    "muuri": "^0.8.0"
+    "muuri": "^0.8.0",
+    "sass": "^1.26.8"
   }
 }

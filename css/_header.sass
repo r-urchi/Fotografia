@@ -3,8 +3,14 @@ header
     .header__logo
         text-align: center
         margin-bottom: 40px
+        display: -webkit-box
+        display: -ms-flexbox
         display: flex
+        -webkit-box-pack: center
+        -ms-flex-pack: center
         justify-content: center
+        -webkit-box-align: center
+        -ms-flex-align: center
         align-items: center
 
 .header__contacto,
@@ -20,9 +26,12 @@ header
     border-radius: 100%
     margin-right: 20px
     cursor: pointer
+    -webkit-box-shadow: 0 5px 5px rgba(90, 116, 148, 0.3)
     box-shadow: 0 5px 5px rgba(90, 116, 148, 0.3)
     &:hover
         opacity: 0.7
+        -webkit-transition: .2s ease all
+        -o-transition: .2s ease all
         transition: .2s ease all
 
 .header__descripcion
@@ -35,7 +44,11 @@ header
 
 .header__formulario
     width: 100%
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
     margin-bottom: 20px
 
@@ -51,6 +64,7 @@ header
     text-align: center
     font-size: 16px
     outline: none
+    -webkit-box-shadow: 0 5px 5px rgba(90, 116, 148, 0.3)
     box-shadow: 0 5px 5px rgba(90, 116, 148, 0.3)
 
 .header__lupa
@@ -62,11 +76,17 @@ header
     color: #545454
     background: #f8f8f8
     padding: 0 25px
+    -webkit-box-shadow: 0 5px 5px rgba(90, 116, 148, 0.3)
     box-shadow: 0 5px 5px rgba(90, 116, 148, 0.3)
 
 .header__categorias
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
+    -ms-flex-wrap: wrap
     flex-wrap: wrap
 
 .header__enlace
@@ -75,6 +95,7 @@ header
     font-size: 18px
     font-weight: 700
     padding: 10px
+    
 .header__enlace.activo
     color: #fff
     background: #3d3d3d

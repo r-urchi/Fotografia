@@ -1,5 +1,9 @@
 .contenedor__contacto-titulo
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
     text-align: center
     font-size: 35px
@@ -7,12 +11,21 @@
 
 .formulario__contenedor
     width: 100%
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
 
 .formulario__nombre-mail
     width: 100%
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
     justify-content: space-between
     
     
@@ -59,13 +72,18 @@
     width: 0%
     bottom: 0
     position: absolute
+    background: -webkit-gradient(linear, left top, right top, from(#6A82FB), to(#FC5C7D))
+    background: -o-linear-gradient(left, #6A82FB, #FC5C7D)
     background: linear-gradient(to right, #6A82FB, #FC5C7D)
+    -webkit-transition: 0.3s ease all
+    -o-transition: 0.3s ease all
     transition: 0.3s ease all
     left: 0%
     
 .formulario__boton
     background: #FC5C7D
-    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D)
+    background: -webkit-gradient(linear, left top, right top, from(#6A82FB), to(#FC5C7D))
+    background: -o-linear-gradient(left, #6A82FB, #FC5C7D)
     background: linear-gradient(to right, #6A82FB, #FC5C7D)
     display: block
     width: 100px
@@ -76,19 +94,24 @@
     font-size: 16px
     margin: 10px auto
     cursor: pointer
+    -webkit-box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.42)
     box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.42)
     &:hover
         color: #c0c0c0
-    
-
 
 // redes 
 
 footer .redes-sociales
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -ms-flex-line-pack: center
     align-content: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
     padding: 20px
+    -ms-flex-wrap: wrap
     flex-wrap: wrap
     a i
         font-size: 20px
@@ -100,10 +123,13 @@ footer .redes-sociales
     height: 60px
     background: #000
     color: #fff
+    -webkit-box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.42)
     box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.42)
     margin: 20px
     text-align: center
     border-radius: 100px
+    -webkit-transition: .3s ease all
+    -o-transition: .3s ease all
     transition: .3s ease all
 
 .redes-sociales__enlace.facebook
@@ -112,10 +138,13 @@ footer .redes-sociales
     background: #c13584
 
 .redes-sociales__contenedor-icono:hover a
+    -webkit-animation: icono .5s ease
     animation: icono .5s ease
 
 @keyframes icono
     from
+        -webkit-transform: rotate3d(0, 0, 0, 0)
         transform: rotate3d(0, 0, 0, 0)
     to 
+        -webkit-transform: rotate3d(0, 1, 0, 360deg)
         transform: rotate3d(0, 1, 0, 360deg)

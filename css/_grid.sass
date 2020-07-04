@@ -2,7 +2,10 @@
     position: relative
     width: 100%
     opacity: 0
+    -webkit-transition: opacity 0.5s linear 1s
+    -o-transition: opacity 0.5s linear 1s
     transition: opacity 0.5s linear 1s
+
 .grid.imagenes-cargadas
     opacity: 1
     
@@ -13,6 +16,7 @@
     margin: 10px
     width: calc(33.33333% - 20px)
     overflow: hidden
+    -webkit-box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.42)
     box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.42)
     .item__contenido
         position: relative
@@ -20,8 +24,12 @@
         width: 100%
         cursor: pointer
         vertical-align: top
+        -webkit-transition: all .2s ease
+        -o-transition: all .2s ease
         transition: all .2s ease
         &:hover
+            -webkit-transform: scale(1.2)
+            -ms-transform: scale(1.2)
             transform: scale(1.2)
 
     
